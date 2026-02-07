@@ -1,6 +1,76 @@
-h1{
-    font-size: 36px;
-    color: purple;
-    font-style: italic;
-    text-align: center;
+*{
+    margin: 0;
+}
+.box-relative{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+
+    position: relative;
+    /* top: 100px; */
+    /* left: 500px; */
+    right: 100px;
+    bottom: 100px;
+
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(60, 0, 255);
+
+    /* position: relative; */
+    z-index: 100;
+}
+
+.parent{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 2px solid black;
+
+    bottom: 200px;
+    right: 100px;
+}
+
+body{
+    height: 2000px;
+    width: 4000px;
+}
+
+.box-fixed{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(208, 0, 255);
+
+    position: fixed;
+    top: 0;
+    left: 100px;
+
+    z-index: 1000;
+}
+
+.box-sticky{
+    background-color: rgb(255, 246, 127);
+    height: 50px;
+
+    position: sticky;
+    top: 0;
+    /* z-index: 100; */
+}
+
+.box2{
+    height: 2000px;
+}
+
+.box-sticky2{
+    background-color: rgb(127, 255, 136);
+    height: 50px;
+
+    position: sticky;
+    top: 50px;
+}
+
+.box3{
+    font-size: 54px;
 }
