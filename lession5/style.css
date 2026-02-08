@@ -32,11 +32,11 @@
     bottom: 200px;
     right: 100px;
 }
-
+/* 
 body{
     height: 2000px;
     width: 4000px;
-}
+} */
 
 .box-fixed{
     width: 150px;
@@ -73,4 +73,61 @@ body{
 
 .box3{
     font-size: 54px;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.parent2{
+    margin-top: 200px;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+
+    position: relative;
+}
+
+.child2{
+    width: 200px;
+    height: 80px;
+    background-color: blue;
+
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+
+    transform: translate(50%, 50%);
+
+}
+
+.overflow{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin: 0 auto;
+
+    overflow: auto;
+    /* overflow:hidden; */
+    /* overflow: s; */
+
+}
+
+.overflow::-webkit-scrollbar{
+    width: 28px;
+}
+
+.overflow::-webkit-scrollbar-thumb{
+    background: #ee0808;
+    border-radius: 10px;
+}
+
+.overflow::-webkit-scrollbar-track{
+    background-color: rgb(203, 203, 204);
+}
+
+.overflow::-webkit-scrollbar-thumb:hover {
+    background: #0944c2;
 }
