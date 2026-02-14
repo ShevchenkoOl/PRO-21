@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <button class="btn_modal" type="button">Open modal</button>
+    </main>
+
+    <!-- затемненый фон -->
+    <div class="overlay"></div>
+    <!-- modal window -->
+    <div class="modal-container">
+      <div class="close">X</div>
+      <form class="form" action="https://formspree.io/f/maqdoenk" method="POST">
+        <label for=""
+          >Имя
+          <input type="text" name="name" placeholder="Введите своё имя" />
+        </label>
+        <label for=""
+          >Почта
+          <input type="email" name="email" placeholder="Введите свою почту" />
+        </label>
+        <label for="message">Сообщение</label>
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="введите сообщение"
+        ></textarea>
+        <button class="btn_submit" type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
