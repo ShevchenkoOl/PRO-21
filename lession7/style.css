@@ -9,13 +9,54 @@ ul{
 }
 
 a{
-    list-style: none;
+   font-family: "Playwrite US Modern", cursive;
+    text-decoration: none;
+    color: black
 }
 
 .header{
     height: 20vh;
     background-color: rgb(124, 124, 245);
+    padding: 20px;
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.logo-img{
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+}
+.nav_menu{
+    width: 100%;
+}
+/* hamburger */
+.hamburger{
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.hamburger span{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+}
+/* list menu */
+.list{
+    display: flex;
+    justify-content: space-around;
+    font-size: 26px;
+    /* font-weight: 800; */
+}
+
+.list.active{
+        display: flex;
+    }
 
 .main{
     display: flex;
@@ -43,7 +84,7 @@ a{
 
 .modal-container{
     display: none;
-
+    /* display: flex; */
     width: 400px;
     background-color: rgb(243, 243, 208);
     border: 1px solid black;
@@ -96,4 +137,26 @@ a{
 
 .overlay.active{
     display: block;
+}
+
+
+
+
+@media (max-width: 630px){
+    .nav_menu{
+    width: 20px;
+}
+    .hamburger{
+        display: flex;
+        /* margin-left: auto; */
+    }
+
+    .list{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        background-color: rgb(124, 124, 245);
+    }
 }

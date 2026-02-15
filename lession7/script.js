@@ -13,3 +13,11 @@ close.addEventListener("click", ()=>{
     modal.classList.remove("active");
     overlay.classList.remove("active");
 });
+
+// hamburger menu
+const menu = document.querySelector('.hamburger');
+const list = document.querySelector('.list');
+
+menu.addEventListener("click", ()=>{
+    list.classList.toggle('active')
+})
