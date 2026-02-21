@@ -1,0 +1,46 @@
+.rect1{
+    width: 200px;
+    height: 100px;
+    fill: yellow;
+    stroke: black;
+    stroke-width: 4px;
+    x: 500px;
+    y: 150px;
+    rx: 10px;
+    /* opacity: ; */
+}
+
+.icon{
+    width: 20px;
+    height: 200px;
+}
+
+form{
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid black;
+    background-color: rgb(247, 215, 215);
+}
+
+input{
+    padding: 10px 10px 10px 30px;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 10px;
+
+    transform: translateY(-50%);
+}
