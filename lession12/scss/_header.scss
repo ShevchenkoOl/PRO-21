@@ -1,0 +1,46 @@
+@use "variables";
+
+
+h1{
+    color: variables.$redColor;
+}
+
+header{
+     border: 2px solid variables.$redColor;
+     padding: variables.$reset_padding;
+}
+
+// Обычный способ написания стилей для классов
+
+// .list{
+//     color:black;
+// }
+
+// .list_item{
+//     color:blue;
+// }
+
+// .list_link{
+//     color:green;
+// }
+
+
+// Вложенный способ написания стилей для классов
+
+.list {
+    color:black;
+
+    &_item{
+        color:blue;
+    }
+
+    &_link{
+        color:green;
+
+        &:hover{
+            color: variables.$redColor;
+            transform: scale(2);
+        }
+    }
+}
+

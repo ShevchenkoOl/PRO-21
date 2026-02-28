@@ -1,0 +1,76 @@
+body {
+  background-color: aqua;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: red;
+}
+
+header {
+  border: 2px solid red;
+  padding: 0;
+}
+
+.list {
+  color: black;
+}
+.list_item {
+  color: blue;
+}
+.list_link {
+  color: green;
+}
+.list_link:hover {
+  color: red;
+  transform: scale(2);
+}
+
+.btn, .btn2 {
+  border: 3px dotted rgb(30, 245, 62);
+  border-radius: 30px;
+  background-color: rgb(165, 210, 140);
+  padding: 30px;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: tan;
+  padding: 20px;
+}
+
+.btn2 {
+  background-color: rgb(230, 12, 241);
+  border: 1px solid rgb(230, 12, 241);
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+}
+
+.dog-icon {
+  background-image: url("../images/dog.webp");
+}
+
+.cat-icon {
+  background-image: url("../images/cat.webp");
+}
+
+.bird-icon {
+  background-image: url("../images/bird.webp");
+}/*# sourceMappingURL=main.css.map */

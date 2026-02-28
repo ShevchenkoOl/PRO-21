@@ -1,0 +1,14 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover; 
+}
+
+
+@each $animal in dog, cat, bird {
+  .#{$animal}-icon {
+    background-image: url('../images/#{$animal}.webp');
+  }
+}
