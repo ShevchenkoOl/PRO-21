@@ -1,0 +1,162 @@
+header {
+  background-color: #f4a3a3;
+  color: #fff;
+  padding: 20px;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 48px;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 20px;
+  color: #9fa3aa;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: aqua;
+  padding: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button, .button-menu {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #c23c2a;
+  color: #c23c2a;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+a {
+  color: #c23c2a;
+  text-decoration: none;
+}
+
+.button {
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: #c23c2a;
+  color: hsl(218, 27%, 6%);
+}
+.button-menu {
+  background-color: #c23c2a;
+  color: #0b0e13;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #2a2f3a;
+}
+
+.menu {
+  color: gold;
+  text-align: end;
+}
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  border: 1px solid #333;
+}
+.button:hover {
+  background-color: lightblue;
+}
+
+.box {
+  width: 400px;
+  height: 200px;
+  border: 1 px solid black;
+  border-radius: 10px;
+}
+
+.box2 {
+  width: 400px;
+  height: 200px;
+  border: 1 px solid black;
+  border-radius: none;
+}
+
+.dog-icon {
+  background-image: url("../images/dog.png");
+}
+
+.cat-icon {
+  background-image: url("../images/cat.png");
+}
+
+.bird-icon {
+  background-image: url("../images/bird.png");
+}
+
+.turtle-icon {
+  background-image: url("../images/turtle.png");
+}
+
+.box4 {
+  padding: 40px;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  color: gold;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #2a2f3a;
+  padding-bottom: 10px;
+}
+
+.skills {
+  display: block;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill {
+  flex: 1 1 200px;
+  border: 1px solid #2a2f3a;
+  padding: 20px;
+  background-color: #11151c;
+}

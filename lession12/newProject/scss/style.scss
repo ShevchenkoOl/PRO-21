@@ -1,0 +1,156 @@
+// @import "header";
+@use "header";
+@use "variables" as *;
+@use "templates" as *;
+@use "dictionary" as *;
+@use "base";
+@use "button";
+@use "footer";
+@use "mixins" as *;
+
+
+*{
+    // margin: variables.$resetMargin;
+    margin: $resetMargin;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.button {
+ @extend %button-base;
+ border: $border_btn;
+
+     &:hover{
+        background-color: lightblue;
+
+    }
+}   
+
+
+@mixin BR($radius) {
+  border-radius: $radius;
+}
+
+.box{
+    width: 400px;
+    height:  200px;
+    border: 1 px solid black;
+    @include BR(10px);
+
+}
+
+
+.box2 {
+  width: 400px;
+  height: 200px;
+  border: 1 px solid black;
+    @include BR(none);
+}
+
+
+@each $animal in dog, cat, bird, turtle {
+  .#{$animal}-icon {
+    background-image: url('../images/#{$animal}.png');
+  }
+}
+
+.box4{
+    padding: get-space("very_large");
+}
+
+
+// SASS vc CSS
+//  1. импорт модулей
+
+// SASS
+//  // @import "header";
+    // @use "header";
+
+// CSS
+// @import url("header.css");
+// <link rel="stylesheet" href="style.css">
+
+
+// 2. использование переменных
+// SASS
+// $resetMargin: 10px;
+
+// body{
+//     margin: $resetMargin;
+// }
+
+// CSS
+// :root {
+//     --resetMargin: 10px;
+//     --texColor: #333;
+//     --border_btn: 1px solid #333;
+// };
+
+// body{
+//     margin: var(--resetMargin);
+// }
+
+// .button{
+//     border: var(--border_btn);
+// }
+
+// 3. использование шаблонов в обычном CSS щаблонов НЕТ. 
+// .btn_base{
+//     background-color: aqua;
+//     padding: 0;
+//     border-radius: 4px;
+//     cursor: pointer;
+// }
+// .btn_error{
+//     background-color: red;
+// }
+
+// .btn_success{
+//     background-color: green;
+// }
+
+// <button class="btn_base btn_error">Error</button>
+
+// 4. вложенность в SASS и СSS - едентично.
+
+
+
+
+
+
+
+
+
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  color: gold;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #2a2f3a;
+  padding-bottom: 10px;
+}
+
+.skills {
+ @include wrap(wrap, 20px, block);
+ justify-content: center;
+}
+
+.container{
+    @include flex-center();
+}
+
+.skill {
+  flex: 1 1 200px;
+  border: 1px solid #2a2f3a;
+  padding: 20px;
+  background-color: #11151c;
+}

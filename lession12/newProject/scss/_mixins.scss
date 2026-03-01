@@ -1,0 +1,18 @@
+@mixin text-possition($possition) {
+  text-align: $possition;
+}
+
+
+@mixin wrap($wrap, $size, $display: flex) {
+  display: $display;
+  flex-wrap: $wrap;
+  gap: $size;
+}
+
+@mixin flex-center($display: flex, $direction: row, $center: center, $align-items: center, $gap: 10px) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $center;
+    align-items: $align-items;
+    gap: $gap;
+}

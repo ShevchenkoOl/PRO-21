@@ -1,0 +1,26 @@
+$spaces:(
+    "small": 5px,
+    "medium": 10px,
+    "large": 20px,
+    "very_large": 40px
+);
+
+@function get-space($size){
+    @return map-get($spaces, $size);
+}
+
+// .box4{
+//     padding: get-space("large");
+// }
+
+
+$colors:(
+    "black": #000,
+    "white": #fff,
+    "gold": #ffd700,
+    "red": #c23c2a
+); 
+
+@function get-color($value){
+    @return map-get($colors, $value);
+}

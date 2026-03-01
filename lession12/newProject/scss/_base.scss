@@ -1,0 +1,12 @@
+@use "dictionary" as *;
+
+body {
+  margin: 0;
+  background-color: get-color("black");
+  color: get-color("white");
+}
+
+a {
+  color: get-color("red");
+  text-decoration: none;
+}

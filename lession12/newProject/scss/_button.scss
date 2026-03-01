@@ -1,0 +1,23 @@
+@use "dictionary" as *;
+@use "templates" as *;
+
+.button {
+    
+  @extend %button;
+  text-transform: uppercase;
+
+  &:hover {
+  background-color: #c23c2a;
+  color: hsl(218, 27%, 6%);
+
+}
+
+&-menu {
+ @extend %button;
+  background-color: #c23c2a;
+  color: #0b0e13;
+}
+
+}
+
+

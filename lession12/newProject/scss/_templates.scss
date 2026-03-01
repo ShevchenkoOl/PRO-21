@@ -1,0 +1,24 @@
+// @use "variables" as border_btn;
+@use "variables" as *;
+@use "dictionary" as *;
+
+%button-base {
+  background-color: aqua;
+  padding: $resetPadding;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+// .button {
+//  @extend %button-base;
+//  border: $border_btn;
+
+// }
+
+ %button {
+  display: inline-block;
+  padding: get-space("medium") get-space("large");
+  border: 1px solid #c23c2a;
+  color: #c23c2a;
+  font-weight: bold;
+}
