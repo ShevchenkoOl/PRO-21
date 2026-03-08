@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/lession15/favicon-32x32.png"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  </head>
+  <body>
+    <a href="page2.html">Page2</a>
+    <div class="container">
+      <a
+        href="foto.jpg"
+        class="glightbox"
+        data-title="My title"
+        data-description="description here"
+        data-desc-position="bottom"
+        data-type="image"
+        data-effect="fade"
+        data-width="900px"
+        data-height="auto"
+        data-zoomable="true"
+        data-draggable="true"
+      >
+        <img src="foto.jpg" alt="image" />
+      </a>
+      <a
+        href="bg_container.png"
+        class="glightbox"
+        data-title="My title"
+        data-description="description here"
+        data-desc-position="bottom"
+        data-type="image"
+        data-effect="fade"
+        data-width="900px"
+        data-height="auto"
+        data-zoomable="true"
+        data-draggable="true"
+      >
+        <img src="bg_container.png" alt="image" />
+      </a>
+    </div>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "tailwindcss",
+  "version": "4.2.1",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  },
+
+  "author": {
+    "name": "Oleksii Shevcgenko",
+    "email": "uzl@example.com"
+  }
+}

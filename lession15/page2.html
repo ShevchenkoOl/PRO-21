@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+</head>
+<body>
+    <a href="page3.html">Page3</a>
+    <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="foto.jpg" alt="image" /></div>
+    <div class="swiper-slide"><img src="bg_container.png" alt="image" /></div>
+    <div class="swiper-slide"><img src="foto.avif" alt="image" /></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+
+<form class="my-form">
+  <div>
+    <input id="check-1" type="checkbox" />
+    <label for="check-1">Checkbox 1</label>
+  </div>
+  <div>
+    <input checked="" id="check-2" type="checkbox" />
+    <label for="check-2">Checkbox 2</label>
+  </div>
+  <div>
+    <input id="check-3" type="checkbox" />
+    <label for="check-3">Checkbox 3</label>
+  </div>
+  <div>
+    <input id="check-4" type="checkbox" />
+    <label for="check-4">Checkbox 4</label>
+  </div>
+</form>
+<div class="loader"></div>
+<script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  // pagination: {
+  //  el: '.swiper-pagination',
+  //},
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+</body>
+</html>
