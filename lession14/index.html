@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Бесплатные уроки HTML и CSS для начинающих. Учим верстку сайтов с нуля.">
+    <title>Document</title>
+
+  <meta name="keywords" content="HTML, CSS, верстка, уроки, обучение">
+  <meta name="author" content="Иван Иванов">
+  <meta name="robots" content="index, follow">
+  <!-- robots — говорит поисковикам (Google, Bing, Яндекс и др.), что делать с этой страницей. content="index, follow" — два ключевых параметра:
+      - index — разрешает поисковику индексировать страницу, т.е. добавлять её в результаты поиска.
+      - follow — разрешает поисковику следовать по ссылкам на этой странице и индексировать связанные страницы.
+| `noindex, nofollow` | Не индексировать страницу и не переходить по ссылкам.                     |
+| `noindex, follow`   | Страница не будет в поиске, но ссылки на ней будут индексироваться.       |
+| `index, nofollow`   | Страница будет в поиске, но поисковики не будут переходить по её ссылкам. | -->
+
+<!-- Open Graph -->
+  <meta property="og:title" content="Уроки HTML и CSS для начинающих">
+  <meta property="og:description" content="Учим верстать сайты с нуля">
+  <meta property="og:image" content="https://example.com/image.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Учебный сайт по HTML и CSS"
+  }
+  </script>
+
+  <!-- обозначения:
+         - @context — всегда https://schema.org, стандарт для структурированных данных.
+         - @type — тип объекта. В нашем случае EducationalOrganization (образовательная организация).
+        - name — название сайта/организации.
+          Можно добавить ещё:
+              - url — адрес сайта
+              - logo — логотип
+              - sameAs — ссылки на соцсети
+Основные @type:
+1️⃣ Организации и компании
+Organization — любая организация
+Corporation — корпорация
+EducationalOrganization — образовательная организация (школы, онлайн-курсы)
+LocalBusiness — локальный бизнес (магазин, кафе, сервис)
+NonprofitOrganization — некоммерческая организация
+
+2️⃣ Люди
+Person — человек, можно указать имя, должность, соцсети, контактные данные
+
+3️⃣ Продукты и услуги
+Product — продукт (товар)
+Service — услуга
+SoftwareApplication — программное обеспечение
+
+4️⃣ События
+Event — любое событие (концерт, вебинар, выставка)
+MusicEvent, SportsEvent, BusinessEvent — специализированные события
+
+5️⃣ Контент и страницы
+Article — статья, блог-пост
+BlogPosting — пост в блоге
+NewsArticle — новостная статья
+WebPage — обычная страница сайта
+FAQPage — страница с вопросами и ответами
+
+6️⃣ Местоположение и адрес
+Place — место (город, здание)
+LocalBusiness — для бизнеса с конкретным адресом
+PostalAddress — структура адреса
+
+Более детальная инфо: https://schema.org/EducationalOrganization -->
+  </script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<article>
+  <header>
+    <h1>Как выучить JavaScript</h1>
+    <p><strong>Автор:</strong> Иван Петров | <time datetime="2025-11-01">01 ноября 2025</time></p>
+  </header>
+
+  <p>
+    JavaScript — это язык программирования, который используется для создания интерактивных сайтов. 
+    В этой статье мы разберём основы и дадим советы для начинающих.
+  </p>
+
+  <footer>
+    <a href="#">Читать далее</a>
+  </footer>
+</article>
+
+
+
+<div>
+  <div><h2>Как выучить JavaScript</h2></div>
+  <div>
+    <div>Автор: Иван Петров</div>
+    <div>01 ноября 2025</div>
+  </div>
+  <div>
+    JavaScript — это язык программирования, который используется для создания интерактивных сайтов...
+  </div>
+  <div><a href="#">Читать далее</a></div>
+</div>
+
+
+<img src="https://via.placeholder.com/150" alt="Пример изображения" loading="lazy">
+
+<!-- Лучше использовать:
+    WebP
+    AVIF
+вместо
+    JPEG
+    PNG -->
+
+</body>
+</html>

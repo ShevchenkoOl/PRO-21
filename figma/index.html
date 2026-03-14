@@ -1,20 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NZ+Basic:wght@100..400&family=Playwrite+US+Modern:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        
+      <div class="head">
+        <div class="logo">
+          <a href="index.html" class="logo__link">QWERy</a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Information</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">About us</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Culture</a></li>
+          </ul>
+        </nav>
+        <div class="search">
+          <svg class="icon">
+            <use href="./icons.svg#icon-search"></use>
+          </svg>
+          <input class="search__input" type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="foot">
+        <nav class="nav-soc">
+          <ul class="nav-soc__list">
+            <!-- Follow us -->
+            <span class="nav-soc__span">Follow us</span>
+            <li class="nav-soc__item">
+              <a class="nav-soc__link" href="#"
+                ><svg class="icon-soc">
+                  <use href="./icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="nav-soc__item">
+              <a class="nav-soc__link" href="#"
+                ><svg class="icon-soc">
+                  <use href="./icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="nav-soc__item">
+              <a class="nav-soc__link" href="#"
+                ><svg class="icon-soc">
+                  <use href="./icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-container">
-        <section class="section-top"></section>
-        <section class="section-midle"></section>
-        <section class="section-bottom"></section>
+      <section class="section-top"></section>
+      <section class="section-midle"></section>
+      <section class="section-bottom"></section>
     </main>
     <footer class="footer"></footer>
-</body>
+  </body>
 </html>
