@@ -97,10 +97,20 @@
 // console.log(++a); // 6
 
 // Создание e-mail адреса: Пользователь вводит имя и фамилию через prompt. Соедините их через точку, добавьте @mujmail.com и выведите на экран с помощью оператора +.
-let userName = prompt("Enter your name");
-let userSurname = prompt("Enter your surname");
-let email = userName + "." + userSurname + " @mujmail.com"
-;
-document.body.innerHTML = `<h1>Hello, ${userName}</h1>
-                            <p>We created for you new email address</p>
-                            <p>Your email addresss id ${email}</p>`;
+// let userName = prompt("Enter your name");
+// let userSurname = prompt("Enter your surname");
+// let email = userName + "." + userSurname + " @mujmail.com"
+// ;
+// document.body.innerHTML = `<h1 class="title">Hello, ${userName}</h1>
+//                             <p class="paragraph">We created for you new email address</p>
+//                             <p class="paragraph">Your email addresss id ${email}</p>`;
+
+
+// Расчёт дневного бюджета: Месячный бюджет студента — 12 000 Kč. В месяце 30 дней. Посчитайте средний дневной бюджет и выведите его на экран.
+
+// const monthlyBudget = 12000;
+// // prompt();
+// const dayMonth = 30;
+// const avrage = monthlyBudget / dayMonth;
+
+// document.body.innerHTML = `<p>Cредний дневной бюджет составляет ${avrage} Kč.</p>`;
