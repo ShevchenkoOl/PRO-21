@@ -6,6 +6,13 @@
 
 // console.log(typeof(arr));
 
+const arr = [1, 2, 3];
+console.log(arr);
+console.log(typeof(arr)); // object
+
+console.log(typeof(1) === "number"); // true
+console.log("Это массив", Array.isArray(arr)) // true
+
 // const arr1 = ["apple", "pure", "orange"];
 // arr1[0] = 45;
 // arr1[1] = 7;
