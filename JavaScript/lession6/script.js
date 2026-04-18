@@ -92,10 +92,10 @@
 // console.log(num);
 // console.log(arr);
 
-// import { renderApartmanet } from "./apartments.js";
-// import { rent } from "./rent.js";
+import { renderApartmanet } from "./apartments.js";
+import { rent } from "./rent.js";
 
-// renderApartmanet(rent)
+renderApartmanet(rent)
 
 
 
@@ -114,11 +114,11 @@
 // console.log(sum(4, 7)); // 7 + 4 = 11
 
 
-function sum(a, b=78, ...other){
-    console.log(other) // array 
-    return a + b + other
-};
+// function sum(a, b=78, ...other){
+//     console.log(other) // array 
+//     return a + b + other
+// };
 
 // console.log(sum(4)); // 4 + 15 = 19
 // console.log(sum(4, 7)); // 7 + 4 = 11
-console.log(sum(14, 45)); // то есть остальные парв=амеиры это масив значений
+// console.log(sum(14, 45)); // то есть остальные парв=амеиры это масив значений
