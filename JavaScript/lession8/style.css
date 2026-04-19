@@ -1,0 +1,10 @@
+.active{
+    font-size: 36px;
+    font-weight: 800;
+    color: white;
+    background-color: blueviolet;
+}
+
+.reset{
+list-style: none;
+}
