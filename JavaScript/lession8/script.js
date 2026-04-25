@@ -111,20 +111,27 @@
 
 // list.append(virtualFragment);
 
-const network = [
-    {id:1, name: "Alex", post: "Hello" },
-    {id:2, name: "Farid", post: "Good Day" },
-    {id:3, name: "Adil", post: "Morning" },
-    {id:4, name: "Vlad", post: "Hi" },
-];
+// const network = [
+//     {id:1, name: "Alex", post: "Hello" },
+//     {id:2, name: "Farid", post: "Good Day" },
+//     {id:3, name: "Adil", post: "Morning" },
+//     {id:4, name: "Vlad", post: "Hi" },
+// ];
 
-const container = document.querySelector("#root");
-const ul = document.createElement("ul");
+// const container = document.querySelector("#root");
+// const ul = document.createElement("ul");
 
-network.forEach(el => {
-    const li = document.createElement("li");
-    li.insertAdjacentHTML("beforeend", `<span>${el.name}: ${el.post}</span>`)
-    ul.append(li);
-});
+// // network.forEach(el => {
+// //     const li = document.createElement("li");
+// //     li.insertAdjacentHTML("beforeend", `<span>${el.name}: ${el.post}</span>`)
+// //     ul.append(li);
+// // });
 
-container.append(ul);
+// // container.append(ul);
+
+// const renderPosts = network.map(el => {
+//     return `<li><span>${el.name}: ${el.post}</span></li>`
+// }).join('');
+// container.insertAdjacentHTML("beforeend", renderPosts);
+
+

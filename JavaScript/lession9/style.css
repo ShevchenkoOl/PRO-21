@@ -1,0 +1,17 @@
+.hidden{
+    display: none;
+}
+
+.status{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
