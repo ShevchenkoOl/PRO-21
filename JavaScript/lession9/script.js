@@ -69,6 +69,9 @@
 //     content.classList.remove('hidden');
 // });
 
+
+
+
 let products = [
   { id: 1, name: "Ноутбук", price: 1500, isFavorite: false, isAvailable: true },
   { id: 2, name: "Мышка", price: 50, isFavorite: true, isAvailable: false },
