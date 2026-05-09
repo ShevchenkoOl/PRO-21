@@ -12,5 +12,8 @@
     "vite": "^8.0.10"
   },
   "hosting": "vecal",
-  "author": "Oleksii"
+  "author": "Oleksii",
+  "dependencies": {
+    "spin.js": "^4.1.2"
+  }
 }

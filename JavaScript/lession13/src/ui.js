@@ -16,7 +16,7 @@ export function renderCards(results){
     list.innerHTML = '';
     const simsoms = results.map(simson => {
        return `
-            <li class="card">
+            <li class="card" data-id=${simson.id}>
                 <h2>${simson.name}</h2>
                 <p><strong>Возраст: </strong><span>${simson.age}</span>
                 <p><strong>Пол: </strong><span>${simson.gender}</span>

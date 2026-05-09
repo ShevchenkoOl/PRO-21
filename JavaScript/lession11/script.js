@@ -84,7 +84,17 @@ async function loadWether(){
     try {
        console.log("Spinner is starting......");
     
+
+// // ke?y=&q=ptaci&lang=cs&page=1
+// const URL = "https://pixabay.com/api/";
+// const KEY_API = "30790248-497145c5d3b0c6576ca9c953f";
+
+// fetch(`${URL}?key=${API_KEY}&q=${input.value}`);
+
+const inputValue = "ptaci";
+
        const res = await fetch(`${URL}?key=${API_KEY}&q=${city}`);
+
 
        if(!res.ok){
         throw new Error(res.status)
