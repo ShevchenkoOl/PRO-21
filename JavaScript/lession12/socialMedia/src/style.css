@@ -1,0 +1,86 @@
+body {
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #1877f2;
+}
+
+/* Форма создания поста */
+.create-post-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.create-post-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.create-post-form button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.create-post-form button:hover {
+  background-color: #166fe5;
+}
+
+/* Карточки постов */
+.post-card {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.post-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.post-card p {
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.post-actions button {
+  border: none;
+  background: #e4e6eb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.post-actions button:hover {
+  background: #d8dadf;
+}
+
+.like-btn { color: #e0245e; font-weight: bold; }

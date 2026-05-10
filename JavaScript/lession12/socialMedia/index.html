@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>socialmedia</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <h1>Моя Соцсеть</h1>
+
+      <!-- Блок создания поста (Create) -->
+      <div class="create-post-form">
+        <input type="text" id="author-input" placeholder="Ваше имя" />
+        <input type="text" id="content-input" placeholder="Что у вас нового?" />
+        <button id="post-btn">Опубликовать</button>
+      </div>
+
+      <hr />
+
+      <!-- Контейнер, куда мы будем рендерить посты (Read) -->
+      <div id="posts-container">
+        <!-- Сюда JS будет вставлять карточки постов -->
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

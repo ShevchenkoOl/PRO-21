@@ -1,0 +1,17 @@
+{
+  "posts": [
+    {
+      "author": "Liana",
+      "content": "hello",
+      "likes": 3,
+      "id": "GIpdQi8jJUw"
+    },
+    {
+      "author": "Liana",
+      "content": "Ahoj",
+      "likes": 0,
+      "id": "Bpg7FQHEBj4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
